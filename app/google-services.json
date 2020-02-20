@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "886235410431",
+    "firebase_url": "https://simplemessenger-8e06e.firebaseio.com",
+    "project_id": "simplemessenger-8e06e",
+    "storage_bucket": "simplemessenger-8e06e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886235410431:android:e831c36c0deaa6c440c1ca",
+        "android_client_info": {
+          "package_name": "com.example.messenger3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886235410431-b31tlm80d3mjuh5fi13s7rprqs05apgs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjEtRyeNl6G-hiXrGbx13jS843pZYmXqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886235410431-b31tlm80d3mjuh5fi13s7rprqs05apgs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
