@@ -10,17 +10,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.people.PeopleActivity"
+            android:parentActivityName=".ui.home.MainActivity"
+            >
+
+        </activity>
         <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".AccountInfoActivity" >
+            android:name=".ui.chat.ChatActivity"
+            android:parentActivityName=".ui.home.MainActivity"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.home.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.home.MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".ui.account.AccountInfoActivity"
+            android:parentActivityName=".ui.home.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.home.MainActivity" />
+
             <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
-        <activity android:name=".LogInActivity" />
-        <activity android:name=".SignUpActivity">
+        <activity android:name=".ui.auth.LogInActivity" />
+        <activity android:name=".ui.auth.SignUpActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

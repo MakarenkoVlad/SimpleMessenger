@@ -5,16 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackround"
-    tools:context=".AccountInfoActivity">
+    tools:context=".ui.account.AccountInfoActivity">
 
     <EditText
         android:id="@+id/account_name_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="@drawable/circle_text_view"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
+        android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,10 +27,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/circle_text_view"
+        android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="Surname"
         android:inputType="textPersonName"
+        android:padding="5dp"
         app:layout_constraintEnd_toEndOf="@+id/account_name_text_view"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/account_name_text_view"
@@ -39,7 +43,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/circle_text_view"
+        android:backgroundTint="#FFFFFF"
         android:text="Push data"
         android:textAllCaps="true"
         app:layout_constraintEnd_toEndOf="@+id/account_surname_text_view"
@@ -59,15 +64,58 @@
         app:layout_constraintStart_toStartOf="@+id/push_data_button"
         app:layout_constraintTop_toBottomOf="@+id/push_data_button" />
 
-    <Button
+<!--    <Button-->
+<!--        android:id="@+id/pick_picture_button"-->
+<!--        android:layout_width="138dp"-->
+<!--        android:layout_height="124dp"-->
+<!--        android:layout_marginBottom="144dp"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:text="Pick picture"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/account_name_text_view"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/account_name_text_view"-->
+<!--        app:layout_constraintHorizontal_bias="0.496"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/account_name_text_view" />-->
+
+    <ImageButton
         android:id="@+id/pick_picture_button"
         android:layout_width="138dp"
         android:layout_height="124dp"
-        android:layout_marginBottom="144dp"
-        android:background="#FFFFFF"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/circle_text_view"
+        android:backgroundTint="#FFFFFF"
         android:text="Pick picture"
         app:layout_constraintBottom_toTopOf="@+id/account_name_text_view"
         app:layout_constraintEnd_toEndOf="@+id/account_name_text_view"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="@+id/account_name_text_view" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/circle_text_view"
+        android:backgroundTint="#65FFFFFF"
+        android:padding="4dp"
+        android:text="Pick picture"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/pick_picture_button"
+        app:layout_constraintEnd_toEndOf="@+id/pick_picture_button"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="@+id/pick_picture_button" />
+
+    <!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="409dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#7DB142"-->
+<!--        android:minHeight="?attr/actionBarSize"-->
+<!--        android:theme="?attr/actionBarTheme"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/textView"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>
